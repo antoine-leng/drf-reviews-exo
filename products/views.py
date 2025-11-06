@@ -46,6 +46,20 @@ from rest_framework_xml.renderers import XMLRenderer
             type=str,
             location=OpenApiParameter.QUERY,
         ),
+        OpenApiParameter(
+            name="name",
+            description="Filtrer par nom (égalité exacte)",
+            required=False,
+            type=str,
+            location=OpenApiParameter.QUERY,
+        ),
+        OpenApiParameter(
+            name="price",
+            description="Filtrer par prix (égalité exacte)",
+            required=False,
+            type=str,
+            location=OpenApiParameter.QUERY,
+        ),
     ],
 )
 
